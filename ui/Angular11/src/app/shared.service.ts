@@ -25,17 +25,17 @@ export class SharedService {
     return this.http.delete(this.APIUrl + '/department/' + val);
   }
 
-  // getEmpList():Observable<any[]>{
-  //   return this.http.get<any>(this.APIUrl + '/employee');
-  // }
+  getEmpList():Observable<any[]>{
+    return this.http.get<any>(this.APIUrl + '/employee');
+  }
 
-  // addEmployee(val:any){
-  //   return this.http.post(this.APIUrl + '/employee', val);
-  // }
+  addEmployee(val:any){
+    return this.http.post(this.APIUrl + '/employee', val);
+  }
 
-  // updateEmployee(val:any){
-  //   return this.http.post(this.APIUrl + '/employee', val);
-  // }
+  updateEmployee(val:any){
+    return this.http.post(this.APIUrl + '/employee', val);
+  }
 
   deleteEmployee(val:any){
     return this.http.delete(this.APIUrl + '/employee/' + val);
